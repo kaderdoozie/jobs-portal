@@ -1,7 +1,7 @@
 import React from 'react';
 import { LocationMarkerIcon, OfficeBuildingIcon } from '@heroicons/react/solid';
 
-const JobDetailsHeader = () => {
+const JobDetailsHeader = (props) => {
     return <>
         <div id="header-section" className='flex-col space-y-5'>
             <div className="text-gray-800 font-bold">
@@ -9,8 +9,9 @@ const JobDetailsHeader = () => {
             </div>
 
             <div className="text-gray-800 text-3xl font-bold">
-                React JS Developer/Sr. Developer
+               {props.designation}
             </div>
+           
 
             <div id="details" className='flex space-x-3'>
                 <div id="designation">
@@ -19,8 +20,9 @@ const JobDetailsHeader = () => {
                             <OfficeBuildingIcon className='h-5 w-5 text-gray-500' />
                         </div>
                         <div id="designation-name" className="text-sm">
-                            Quality Assurance
+                            {props.department}
                         </div>
+                       
                     </div>
                 </div>
 
@@ -30,14 +32,15 @@ const JobDetailsHeader = () => {
                             <LocationMarkerIcon className='h-5 w-5 text-gray-500' />
                         </div>
                         <div id="designation-name" className="text-sm">
-                            Verna, Goa
+                            {props.location}
                         </div>
+                       
                     </div>
                 </div>
 
                 <div id="type">
-                    <div className="w-15 px-2 py-1 bg-gray-400 text-white font-semibold rounded text-xs">
-                        FULL TIME
+                    <div className="w-15 px-2 py-1 bg-gray-400 text-white font-semibold rounded text-xs uppercase">
+                        {props.type}
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ function App() {
        
         <Routes>
         <Route path="/" element={<JobsListingPage />} />
-        <Route path="job-details" element={<JobDetailPage />} />
+        <Route path="job-details/:id" element={<JobDetailPage />} />
       </Routes>
       </BrowserRouter>
     </div>

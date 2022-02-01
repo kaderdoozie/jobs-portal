@@ -38,7 +38,7 @@ const JobFiltersBox = () => {
                 <div className="col-span-6 sm:col-span-2">
                     <select name="" id="" className="bg-white w-full border border-gray-300  pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 bg-transparent placeholder-gray-500 text-gray-600 dark:text-gray-400">
                         <option value="">Department</option>
-                        {filterBoxData && filterBoxData.map((dept,keyId)=><option key={keyId} value="{dept.department.id}">{dept.department.title}</option>)}
+                        {filterBoxData && filterBoxData.map((dept,keyId)=><option key={keyId} value={dept.department.id}>{dept.department.title}</option>)}
                     </select>
 
                 </div>
@@ -46,14 +46,14 @@ const JobFiltersBox = () => {
                 <div className="col-span-6 sm:col-span-2">
                     <select name="" id="" className="bg-white w-full border border-gray-300  pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 bg-transparent placeholder-gray-500 text-gray-600 dark:text-gray-400">
                         <option value="">Location</option>
-                        {filterBoxData && filterBoxData.map((loc,keyId)=><option key={keyId} value="{loc.department.id}">{loc.location.title}</option>)}
+                        {filterBoxData && filterBoxData.map((loc,keyId)=><option key={keyId} value={loc.department.id}>{loc.location.title}</option>)}
                     </select>
                 </div>
 
                 <div className="col-span-6 sm:col-span-2">
                     <select name="" id="" className="bg-white w-full border border-gray-300  pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 bg-transparent placeholder-gray-500 text-gray-600 dark:text-gray-400">
                         <option value="">Function</option>
-                        {filterBoxData && filterBoxData.map((func,keyId)=><option key={keyId} value="{func.department.id}">{func.function.title}</option>)}
+                        {filterBoxData && filterBoxData.map((func,keyId)=><option key={keyId} value={func.department.id}>{func.function.title}</option>)}
                     </select>
                 </div>
             </div>
